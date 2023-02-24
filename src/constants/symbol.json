@@ -1,0 +1,124 @@
+{
+    "BTC": {
+        "name": "Bitcoin",
+        "intro": [
+            "Bitcoin es una de las criptomonedas más populares del mercado. Desde que Satoshi Nakamoto la presentó por primera vez en 2009, ha mantenido el primer puesto en el mercado de las criptomonedas según su capitalización de mercado. Bitcoin allanó el camino para muchas altcoins que ya existían en el mercado y marcó un antes y un después en las soluciones de pago digital.  ",
+            "Como la primera criptomoneda del mundo, Bitcoin ha recorrido un largo camino en términos de valor. Sin embargo, no es necesario comprar un bitcoin entero, ya que los bitcoins se pueden dividir en unidades pequeñas llamadas «satoshis» en honor a su creador. Un satoshi equivale a 0,00000001 bitcoin.            ",
+            "No hay un token físico de BTC, por lo que se puede considerar dinero digital. Las transacciones de Bitcoin son totalmente transparentes y no se pueden censurar. Puedes enviar dinero a cualquier persona del mundo fácilmente. Es un sistema financiero respaldado por miles de ordenadores, conocidos como «nodos», en todo el mundo, en lugar de un solo banco central o gobierno. De ahí el término «descentralización».             "
+        ]
+    },
+    "ETH": {
+        "name": "Ethereum",
+        "intro": [
+            "Ethereum (ETH) es el segundo token de criptomoneda más grande en términos de capitalización de mercado. Esto se debe a que ha aportado mucha innovación y usos dentro del sector al introducir la función de los contratos inteligentes, que ha allanado el camino para el sector de las finanzas descentralizadas (DeFi) y las aplicaciones descentralizadas o Dapps.",
+            "Ethereum permite que los usuarios construyan y utilicen softwares, por lo general en forma de aplicaciones descentralizadas, que luego impulsa una red global distribuida de ordenadores ejecutando Ethereum. La red Ethereum es descentralizada, por lo que es muy resistente a cualquier forma de censura o inactividad.    ",
+            "Además, Ethereum es una plataforma de cadenas de bloques de código abierto que funciona con el uso de su moneda nativa, llamada Ether o ETH. Todas las comisiones de las transacciones o comisiones de gas de la red se pagan en ETH.             ",
+            "Ethereum o ETH es un token que utiliza específicamente la cadena de bloques de Ethereum para pagar las transacciones. Este token es el responsable de alimentar casi todo lo que ocurre dentro de la red.             ",
+            "Cualquier persona puede utilizar la red Ethereum para crear y ejecutar contratos inteligentes, que son programas informáticos que se ejecutan de forma autónoma, sin intervención del usuario. El crecimiento de Ethereum se puede atribuir en parte a su capacidad de funcionar con contratos inteligentes, lo que ha favorecido un ecosistema creciente de aplicaciones descentralizadas, tokens no fungibles (NFT) y más. ",
+            "Por defecto, Ethereum utiliza el mecanismo de consenso de prueba de trabajo (PoW), pero la red está migrando poco a poco a una prueba de participación (PoS) como parte de su actualización a Ethereum 2.0.  La actualización a Ethereum 2.0 comenzó en diciembre de 2020 con el lanzamiento de Beacon Chain. La comunidad de ETH apoyó esta actualización haciendo stake de 1 millón de ETH solo en la primera semana.             "
+        ]
+    },
+    "MATIC": {
+        "name": "Polygon",
+        "intro": [
+            "Polygon (MATIC), antes conocida como Matic Network, es una solución de interoperabilidad a escala de capa 2 para cadenas de bloques compatibles con Ethereum. La criptomoneda nativa de Polygon, MATIC, se utiliza para participar en la gobernanza, hacer stake y pagar las comisiones del gas. ",
+            "Polygon se desarrolló para abordar las limitaciones de Ethereum, incluido el rendimiento, la velocidad de las transacciones y la falta de gobernanza de la comunidad. Por su diseño, Polygon es una plataforma construida para lanzar cadenas de bloques interoperables.",
+            "Polygon logra ese objetivo usando los puntos de control de prueba de participación construidos en la cadena principal de Ethereum y su More Viable Plasma, una variante de la red Plasma."
+        ]
+    },
+    "XRP": {
+        "name": "Ripple",
+        "intro": [
+            "Ripple (XRP) es una red y un protocolo de pago digital que se utiliza para liquidar pagos, intercambiar activos y transferir dinero. ",
+            "Jed McCaleb y Chris Larsen fundaron Ripple originalmente en 2012 bajo el nombre de «OpenCoin» para que la gente pudiera escapar de las redes financieras como los bancos y las tarjetas de crédito. ",
+            "La criptomoneda nativa de Ripple, XRP, impulsa la cadena de bloques subyacente conocida como «XRP Ledger».  A diferencia de otras cadenas de bloques de criptomonedas, en XRP Ledger solo pueden aportar potencia y validar las transacciones los participantes preaprobados. ",
+            "Ten en cuenta que los nodos no ganan tokens por mantener el historial de transacciones de XRP Ledger. En un primer momento, cuando se lanzó la empresa, los 100 000 millones de XRP ya se habían creado y distribuido entre personas físicas y empresas. ",
+            "En lugar de aplicar comisiones de transacción, XRP Ledger deduce una pequeña cantidad de tokens del total de suministros cada vez que un remitente realiza una transacción."
+        ]
+    },
+    "ADA": {
+        "name": "Cardano ",
+        "intro": [
+            "Cardano (ADA) es una plataforma de cadena de bloques de prueba de participación (PoS) que se lanzó en 2017. Charles Hoskinson, uno de los cofundadores de la red de cadena de bloques de Ethereum, conceptualizó la plataforma por primera vez en 2015. ",
+            "Cardano se desarrolló con el objetivo de solucionar las limitaciones de escalado e infraestructura de la cadena de bloques que sufría la red de cadena de bloques descentralizada de primera generación de Bitcoin y las redes de segunda generación como Ethereum. De hecho, Cardano se considera una alternativa a Ethereum más escalable. El precio de Cardano se actualiza en tiempo real en Binance. ",
+            "A día de hoy, la de Cardano es una de las mayores redes de cadena de bloques en conseguir aplicar correctamente un mecanismo de consenso de PoS con un consumo energético más eficiente que las redes de cadena de bloques de prueba de trabajo (PoW) alternativas. El funcionamiento de la cadena de bloques de Cardano es posible gracias a las capacidades que le otorga el protocolo de contratos inteligentes, una tecnología popularizada originalmente por Ethereum.",
+            "El token de criptomonedas nativo de Cardano es ADA, que permite que los usuarios participen en las operaciones de la red. El token lleva el nombre de Ada Lovelace, una matemática del siglo XIX considerada como la primera programadora informática de la historia."
+        ]
+    },
+    "DOGE": {
+        "name": "Dogecoin ",
+        "intro": [
+            "Jackson Palmer y Billy Markus desarrollaron Dogecoin en 2013. Decidieron crear una versión burlona de las altcoins, que no dejaban de ganar popularidad entre los especuladores de criptomonedas en ese momento. ",
+            "Dogecoin comenzó como una «moneda meme» a modo de broma por el alboroto que estaban generando las nuevas altcoins del mercado. Al principio, Dogecoin tenía poco o ningún valor y se utilizaba como un mecanismo para enviar propinas como agradecimiento a los usuarios en las redes sociales y foros en línea como Reddit. ",
+            "Algo que destacó de Dogecoin fue que tomó prestado el algoritmo de consenso de prueba de trabajo (PoW) basado en Scrypt que utilizaba la ya desaparecida Luckycoin, que a su vez tomó prestada gran parte de su tecnología de Litecoin. ",
+            "Los mecanismos PoW crean consenso utilizando una red de ordenadores que ejecutan el software. Eso hace que cualquier persona con un dispositivo informático válido y una conexión a internet pueda dedicar recursos informáticos para convertirse en un validador de la red de Dogecoin. A cambio, los validadores reciben recompensas de minería en forma de Dogecoins adicionales. El mecanismo PoW también garantiza que Dogecoin ofrezca transacciones rápidas y comisiones bajas, lo que ha contribuido a su adopción por parte de los amantes de las criptomonedas. ",
+            "La comunidad Dogecoin es conocida y sus miembros se autodenominan «Shibes». Hoy en día, Dogecoin todavía se utiliza para enviar propinas a los creadores en línea y también, aunque con poca frecuencia, para el comercio electrónico, ya que los usuarios pueden usar Dogecoin para comprar productos y servicios de algunos comerciantes. ",
+            "Dogecoin se lanzó con un suministro máximo de 100 000 millones de DOGE, aunque desde entonces se ha eliminado el límite, por lo que el suministro es básicamente ilimitado."
+        ]
+    },
+    "DOT": {
+        "name": "Polkadot ",
+        "intro": [
+            "Polkadot es una cadena de bloques que permite que los desarrolladores creen cadenas paralelizables e interoperables personalizadas. Gavin Wood, antiguo director de tecnología y cofundador de Ethereum, lanzó el proyecto en 2006. Todas las cadenas paralelizables se conectan con la cadena principal de retransmisión, lo que les permite comunicarse y compartir la seguridad de la red principal. Una cadena paralelizable puede tener su propio mecanismo de consenso de prueba de participación modificado, desarrollo de aplicaciones descentralizadas y tokens. El espacio para las cadenas paralelizables es limitado y se subasta con frecuencia a DOT.",
+            "El token nativo de Polkadot es DOT, que tiene tres usos principalmente: ",
+            "1. Los titulares pueden votar sobre futuros cambios en el proyecto a través del mecanismo de gobernanza de Polkadot.",
+            "2. Los usuarios pueden pagar las comisiones de las transacciones de la red en la cadena de retransmisión y en algunas cadenas paralelizables.",
+            "3. Se puede hacer stake del token para validar las transacciones. DOT tiene un suministro ilimitado, lo que lo convierte en un token inflacionario, y la red paga las recompensas a los validadores por igual, independientemente del stake. ",
+            "Los creadores de Polkadot afirman que su token no está diseñado para especular, sino para los usos que hemos mencionado anteriormente.",
+            "Polkadot ha tenido un gran éxito a la hora de compartir datos e información entre sus diferentes cadenas paralelizables, proyectos y aplicaciones descentralizadas. La interoperabilidad ha supuesto un gran problema para las cadenas de bloques desde Bitcoin, y Polkadot fue uno de los primeros proyectos en proporcionar una solución. Polkadot también es escalable, ya que puede procesar transacciones en paralelo en las diferentes cadenas de la red."
+        ]
+    },
+    "LTC": {
+        "name": "Litecoin",
+        "intro": [
+            "Litecoin es una moneda de red basada en la tecnología\" punto a punto \"(peer - to - peer), inspirada en Bitcoin (btc) y técnicamente con los mismos principios de implementación. se diferencia de Bitcoin porque también se puede\" minar \"eficientemente a través de hardware de nivel de consumo, proporcionando una confirmación de transacciones más rápida (media de 2,5 minutos). la red de lightcoin espera producir 84 millones de unidades monetarias",
+            "Con la popularidad de bitcoin, ha surgido un gran número de monedas electrónicas de bitcoin\" Shanzhai \"en todo el mundo. hasta ahora, hay al menos otras 30 monedas electrónicas en todo el mundo, como lightcoin, Prime coin, biotcoin, ubs, zhaocai coin, meika coin, etc. las más famosas de estas monedas Shanzhai son lightcoin, y la industria incluso tiene el dicho de\" bitcoin, lightbank \"",
+            "Charlie lee, el creador de lightcoin, se graduó de la Universidad Tecnológica de Massachusetts y fue empleado de google. diseñó lightcoin en 2011",
+            "Lightcoin está inspirado en Bitcoin y técnicamente tiene los mismos principios de implementación. la creación y transferencia de lightcoin se basa en un Protocolo de cifrado de código abierto y no está regulado por ninguna agencia central"
+        ]
+    },
+    "AVAX": {
+        "name": "Avalanche",
+        "intro": [
+            "En septiembre de 2020, Ava Labs lanzó la red Avalanche con el objetivo de mejorar los problemas de escalabilidad y descentralización que se observan en las cadenas de bloques de primera y segunda generación. Avalanche utiliza un enfoque único de tres cadenas de bloques para lograr sus objetivos, con su red principal compuesta por una combinación de C-Chain, X-Chain y P-Chain.",
+            "La X-Chain gestiona los activos y utiliza el protocolo de consenso Avalanche. La C-Chain se encarga de la creación de contratos inteligentes, mientras que la P-Chain coordina a los validadores. Tanto la C-Chain como la P-Chain utilizan el protocolo de consenso Snowman. Snowman se ocupa de las transacciones linealmente en bloques, mientras que el protocolo de consenso Avalanche hace que los validadores comprueben las confirmaciones de las transacciones de forma aleatoria. ",
+            "Al trabajar en paralelo, Avalanche puede alcanzar hasta 6500 transacciones por segundo. Con Avalanche, también se pueden construir cadenas de bloques personalizadas llamadas subredes que son interoperables. No hay límite en el número de cadenas de este tipo y solo hay que pagar una comisión de suscripción en AVAX. ",
+            "AVAX es el token nativo de Avalanche y tiene tres usos:",
+            "1. Los titulares pueden hacer stake de AVAX como delegantes detrás de un validador o como validadores. Un validador puede ganar aproximadamente un 11 % de APY y compartirlo con sus delegantes.",
+            "2. Puedes pagar las comisiones de transacciones y tus suscripciones de subredes en AVAX.",
+            "3. AVAX es una unidad de cuenta común en todas las subredes personalizadas."
+        ]
+    },
+    "SOL": {
+        "name": "Solana",
+        "intro": [
+            "Solana es una cadena de bloques independiente de primera capa creada para ser una red rápida y eficiente con un protocolo subyacente de contratos inteligentes. Desde su lanzamiento en 2020, la red de Solana ha sido considerada como la competencia de Ethereum e incluso ha llegado a recibir el sobrenombre de «la asesina de Ethereum». ",
+            "La escalabilidad de la red, combinada con sus comisiones reducidas y alta velocidad, la convierte en la principal opción para muchas aplicaciones descentralizadas (dApps) basadas en NFT, así como para ecosistemas de finanzas descentralizadas (DeFi) y de pagos digitales basados en la cadena de bloques.",
+            "La red Solana centra su atención en el elevado rendimiento de las transacciones y en la rapidez de procesamiento, que consigue a través de su tecnología de prueba de historial (PoH). Solana afirma ser capaz de procesar unas 65 000 transacciones por segundo, lo que la convierte en una de las más rápidas del sector.",
+            "La cadena de bloques de Solana realiza un hash lineal de las transacciones para crear un orden verificable de la actividad de la red y así poder alcanzar tales velocidades. Gracias a esto no es necesario depender de la marca de fecha/hora del creador de bloques ni de que los validadores de la red comprueben el orden de las transacciones.",
+            "Anatoly Yakovenko, ingeniero de sistemas y programador informático, fundó la red Solana en 2017 junto a Raj Gokal, el actual director de operaciones de Solana.  La red funciona con el mecanismo de sincronización de PoH, que se aplicó antes de la capa de consenso que ahora se ejecuta con un algoritmo de prueba de participación (PoS).",
+            "El token nativo de Solana, SOL, se utiliza principalmente para hacer stake y así contribuir al proceso de validación, y para las comisiones de transacción de los pagos entre pares (P2P). La mejor forma de realizar estas funciones es a través de un suministro ilimitado de tokens. No obstante, la cadena de bloques quema el 50 % de los SOL utilizados para abonar la comisión de cada transacción como parte de la fórmula para mantener su nivel de inflación interanual establecido.",
+            "El 50 % restante de la comisión de transacción se abona a los validadores de la misma. Cualquier persona que tenga suficientes SOL puede convertirse en un validador de red, o en delegante de un validador, y contribuir al proceso de consenso necesario para que la cadena de bloques independiente funcione. Este mecanismo se utiliza para generar recompensas para los usuarios que hacen stake para contribuir a la cadena de bloques de Solana. El precio de SOL se actualiza en directo en Binance.",
+            "El 3 de agosto de 2022 se produjo un incidente de seguridad grave en la red Solana. Las aplicaciones de billeteras descentralizadas, Phantom y Slope, que funcionan en consonancia con la red Solana, notificaron los ataques en las redes sociales para informar al público.",
+            "En total, se calcula que los ciberataques se tradujeron en la sustracción de 8 millones de dólares en SOL de unas 8000 billeteras. Se descubrió que todas billeteras afectadas habían interactuado con otras aplicaciones de los sistemas operativos para móvil iOS y Android. Sigue sin conocerse el origen del cibertaque y se ignora si a los titulares de las billeteras afectadas se les reembolsarán sus fondos."
+        ]
+    },
+    "UNI": {
+        "name": "Uniswap",
+        "intro": [
+            "Uniswap es un popular protocolo de comercio descentralizado, conocido por su papel en la facilitación del comercio automatizado de fichas de financiación descentralizada (DeFi).",
+            "Operando como una especie de fabricante de mercado automatizado (AMM por sus siglas en inglés), Uniswap se puso en marcha en noviembre de 2018, pero ha ganado una considerable popularidad este año gracias al auge del DeFi, y el consiguiente aumento del comercio de tokens.",
+            "El objetivo de Uniswap es mantener completamente abierto el comercio automatizado de tokens para cualquiera que posea fichas, a la vez que busca mejora la eficiencia de las operaciones de trading en comparación con las bolsas de intercambio tradicionales.",
+            "Uniswap es más eficiente porque resuelve los problemas de liquidez a través de soluciones automatizadas, evitando los problemas frecuentes que sacudieron a los primeros intercambios descentralizados.",
+            "En septiembre de 2020, Uniswap fue un paso más allá al crear y otorgar su propio token de gestión, UNI, a los antiguos usuarios del protocolo. Esto añadió un mayor potencial de rentabilidad, así como la capacidad de los usuarios para dar forma a su futuro; un aspecto atractivo de las entidades descentralizadas."
+        ]
+    },
+    "BNB": {
+        "name": "Binance Coin",
+        "intro": [
+            "BNB se lanzó a través de una oferta inicial de monedas en 2017, 11 días antes de que el exchange de criptomonedas Binance se pusiera en marcha. Originalmente se emitió como un token ERC-20 que se ejecutaba en la red de Ethereum, con un suministro total limitado a 200 millones de monedas y 100 millones de BNB ofrecidos en la ICO. Sin embargo, las monedas BNB ERC-20 se intercambiaron con BEP2 BNB en una proporción de 1:1 en abril de 2019 con el lanzamiento de la red principal de Binance Chain, y ahora ya no están alojadas en Ethereum.",
+            "BNB se puede utilizar como método de pago, un token de utilidad para pagar las tarifas en el exchange de Binance y para participar en las ventas de tokens en la plataforma de lanzamiento de Binance. BNB también alimenta a Binance DEX (exchange descentralizado)."
+        ]
+    }
+
+}
