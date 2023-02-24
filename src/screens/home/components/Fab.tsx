@@ -60,35 +60,36 @@ const Fab: React.FC<FabProps> = ({ show, setShow }) => {
     const [fristClose, setFristClose] = React.useState(false);
 
     return <Box  style={styles.cBox}>
-        <Modal isOpen={show} onClose={() => setShow(false)} background='#330F0Cbb'>
-            <Modal.Content background='transparent' borderWidth={0}>
-
-                <Image source={card} alt='card' width={300} height={442} />
-                <Box  position='absolute' top={0} width='100%'>
-                    <Center>
-                        <Text marginTop='146px' color='#FFD5AE' fontSize={15} width='160px' bold>Obter bônus em dinheiro</Text>
-                        <Row height='80px' justifyContent='-moz-initial' marginTop={3} alignItems='flex-end'>
-                            <Text color='#FFD5AF' width='20px' bold paddingBottom='13px'>R$</Text>
-                            <Text width="90px" color='#FFD5AF' bold fontSize='68px' lineHeight='68px'>68</Text>
-                            <Box height='100%'>
-                                <Box padding='2px' borderColor='#FFD5AF' borderWidth={1} borderBottomLeftRadius={0} borderBottomRightRadius='16px' borderTopLeftRadius='16px' borderTopRightRadius='16px'>
-                                    <Text fontSize={12} color='#FFD5AE'>Máximo</Text>
+        <Modal isOpen={show} onClose={() => setShow(false)} background='rgba(51, 15, 12, 0.73)'>
+            <Modal.Content  borderWidth={0}>
+                <Center width='100%'>
+                    <Image source={card} alt='card' width={300} height={442} />
+                    <Box  position='absolute' top={0} width='100%'>
+                        <Center>
+                            <Text marginTop='146px' textAlign='center' color='#FFD5AE' fontSize={14} numberOfLines={1} width='200px' bold>Obter bônus em dinheiro</Text>
+                            <Row height='80px' width='200px'  justifyContent='center' marginTop={3} alignItems='flex-end'>
+                                <Text color='#FFD5AF' bold paddingBottom='13px'>R$</Text>
+                                <Text  color='#FFD5AF' bold fontSize='68px' lineHeight='68px'>68</Text>
+                                <Box height='100%'>
+                                    <Box padding='2px' borderColor='#FFD5AF' borderWidth={1} borderBottomLeftRadius={0} borderBottomRightRadius='16px' borderTopLeftRadius='16px' borderTopRightRadius='16px'>
+                                        <Text fontSize={12} color='#FFD5AE'>Máximo</Text>
+                                    </Box>
                                 </Box>
-                            </Box>
-                        </Row>
-                        <Text marginTop='72px' color='#FFD5AE' marginLeft={10} bold>Tempo efetivo：10 min</Text>
-                        <Pressable marginTop='32px'  onPress={() => {
-                            Linking.openURL(BaseUrl.downloadAndroid);
-                        }}>
-                            <Center >
-                                <Image source={cardBtn} alt='btn' width={220} height='40px' />
-                                <Box position='absolute'>
-                                    <Text  color='#854600' width='150px' fontSize={14} bold>Faça login para receber</Text>
-                                </Box>
-                            </Center>
-                        </Pressable>
-                    </Center>
-                </Box>
+                            </Row>
+                            <Text marginTop='72px' color='#FFD5AE' marginLeft={10} bold>Tempo efetivo：10 min</Text>
+                            <Pressable marginTop='32px'  onPress={() => {
+                                Linking.openURL(BaseUrl.downloadAndroid);
+                            }}>
+                                <Center >
+                                    <Image source={cardBtn} alt='btn' width={220} height='40px' />
+                                    <Box position='absolute'>
+                                        <Text  color='#854600' width='220px' textAlign='center' fontSize={14} bold>Faça login para receber</Text>
+                                    </Box>
+                                </Center>
+                            </Pressable>
+                        </Center>
+                    </Box>
+                </Center>
             </Modal.Content>
             <Center marginTop={4} >
                 <Pressable  onPress={() => {
