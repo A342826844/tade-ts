@@ -19,41 +19,48 @@ import PostCardAd from "./components/PostCardAd";
 
 const pageSize = 20;
 
-type IndexValue = 1|2;
+type IndexValue = 1 | 2;
 interface IndexDetail {
   index: number;
-  type: IndexValue,
-  active: IndexValue,
+  type: IndexValue;
+  active: IndexValue;
 }
 
 const tempIndxDetailMap: {
-  [key: string]: IndexDetail
+  [key: string]: IndexDetail;
 } = {};
 
 const tempIndexList: number[] = (() => {
   const arr = [];
-  let lastIndex = 0
-  while(lastIndex < 200) {
+  let lastIndex = 0;
+  let type = 2;
+  let active1 = 1;
+  let active2 = 4;
+  while (lastIndex < 200) {
     const step = random(3, 5);
     lastIndex += step;
 
-    const type = random(1, 2);
+    type = type === 2 ? 1 : 2;
     let active = 0;
     if (type === 1) {
-      active = random(1, 2);
+      active1 = active1 === 2 ? 1 : 2;
+      active = active1;
     } else {
-      active = random(1, 4);
+      active2 += 1;
+      active = (active2 % 4) + 1;
     }
 
-    arr.push(lastIndex)
+    arr.push(lastIndex);
     tempIndxDetailMap[lastIndex] = {
       index: lastIndex,
       type: type as IndexValue,
       active: active as IndexValue,
-    }
+    };
   }
-  return arr
-})()
+  return arr;
+})();
+
+console.log(tempIndxDetailMap, "tempIndxDetailMap");
 
 export default function Home({ navigation }: RootTabScreenProps<"Home">) {
   const [page, setPage] = React.useState(1);
@@ -77,14 +84,16 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
 
   const showBoxHandle = React.useCallback(() => {
     if (showBox || timer) return;
-    setTimer(setTimeout(() => {
-      setShowBox(true)
-    }, 6000));
-  }, [showBox, timer])
+    setTimer(
+      setTimeout(() => {
+        setShowBox(true);
+      }, 6000)
+    );
+  }, [showBox, timer]);
 
   React.useEffect(() => {
-    showBoxHandle()
-  }, [loading, showBoxHandle])
+    showBoxHandle();
+  }, [loading, showBoxHandle]);
 
   const fetchHandle = React.useCallback(async () => {
     setLoading(true);
@@ -122,7 +131,7 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
     (e: any) => {
       console.log(e.nativeEvent.contentOffset.y);
       setOffsetY(e.nativeEvent.contentOffset.y);
-      setOriageScrollHeight( e.nativeEvent.layoutMeasurement.height);
+      setOriageScrollHeight(e.nativeEvent.layoutMeasurement.height);
       if (loadEnd) return;
       if (refreshing) return;
       if (loading) return;
@@ -150,7 +159,8 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
     }
   }, [page, fetchHandle]);
 
-  const [showAdIndexList, setShowAdIndexList] = React.useState<number[]>(tempIndexList);
+  const [showAdIndexList, setShowAdIndexList] =
+    React.useState<number[]>(tempIndexList);
 
   return (
     <View style={styles.container}>
@@ -177,22 +187,25 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
       >
         <Box mt="2">
           {contentList.map((item, index) => {
-            return <Box  key={item.id}>
-              <PostCard info={item} />
-              {
-
-                showAdIndexList.includes(index) &&  (
+            return (
+              <Box key={item.id}>
+                <PostCard info={item} />
+                {showAdIndexList.includes(index) && (
                   <>
                     {tempIndxDetailMap?.[index]?.type === 1 && (
-                      <VideoCard oriageScrollHeight={oriageScrollHeight} offsetY={offsetY} type={tempIndxDetailMap?.[index]?.active}/>
+                      <VideoCard
+                        oriageScrollHeight={oriageScrollHeight}
+                        offsetY={offsetY}
+                        type={tempIndxDetailMap?.[index]?.active}
+                      />
                     )}
                     {tempIndxDetailMap?.[index]?.type === 2 && (
                       <PostCardAd type={tempIndxDetailMap?.[index]?.type} />
                     )}
                   </>
-                )
-              }
-            </Box>
+                )}
+              </Box>
+            );
           })}
           {loading && <Spinner />}
           {!loading && contentList.length === 0 && <Empty />}
