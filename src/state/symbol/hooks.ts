@@ -81,7 +81,6 @@ export const useFetchUSD = () => {
   const fetchLatestUSD = React.useCallback(async () => {
     const jsonRes = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
     const res = await jsonRes.json();
-    console.log(res);
     if (res && res.rates && res.rates.BRL) {
       dispatch(symbolSetRatesUSD({
         date,

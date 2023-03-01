@@ -60,7 +60,6 @@ const tempIndexList: number[] = (() => {
   return arr;
 })();
 
-console.log(tempIndxDetailMap, "tempIndxDetailMap");
 
 export default function Home({ navigation }: RootTabScreenProps<"Home">) {
   const [page, setPage] = React.useState(1);
@@ -129,7 +128,6 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
 
   const onContentViewScroll = React.useCallback(
     (e: any) => {
-      console.log(e.nativeEvent.contentOffset.y);
       setOffsetY(e.nativeEvent.contentOffset.y);
       setOriageScrollHeight(e.nativeEvent.layoutMeasurement.height);
       if (loadEnd) return;

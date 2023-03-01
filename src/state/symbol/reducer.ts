@@ -56,7 +56,6 @@ export const symbolStore = createSlice({
   extraReducers: (builder) => {
     builder.addCase(symbolSetMarket, (state, { payload }) => {
       const symbol = payload.symbol.split('USDT')[0];
-      console.log(symbol)
       state.marketMap[symbol] = {
         ...payload,
         symbol: symbol,
