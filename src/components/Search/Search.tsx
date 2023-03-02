@@ -12,7 +12,7 @@ const Search: React.FC<
   return (
     <VStack w="100%" space={5} alignSelf="center">
       <Input
-        placeholder="SHIBI"
+        placeholder="BTC"
         width="100%"
         paddingLeft={4}
         borderRadius='full'

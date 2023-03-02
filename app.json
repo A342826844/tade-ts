@@ -3,7 +3,7 @@
     "name": "24H Notícias",
     "slug": "trade-ts",
     "scheme": "trade-ts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -12,8 +12,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "runtimeVersion": "1.0.1",
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/a89661ee-2d7b-4ded-b129-07f3d281d7a3"
     },
     "assetBundlePatterns": [
       "**/*"
