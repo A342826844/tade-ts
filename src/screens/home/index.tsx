@@ -81,18 +81,18 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
     setContentList([]);
   }, [debounceSearch]);
 
-  const showBoxHandle = React.useCallback(() => {
-    if (showBox || timer) return;
-    setTimer(
-      setTimeout(() => {
-        setShowBox(true);
-      }, 6000)
-    );
-  }, [showBox, timer]);
+  // const showBoxHandle = React.useCallback(() => {
+  //   if (showBox || timer) return;
+  //   setTimer(
+  //     setTimeout(() => {
+  //       setShowBox(true);
+  //     }, 6000)
+  //   );
+  // }, [showBox, timer]);
 
-  React.useEffect(() => {
-    showBoxHandle();
-  }, [loading, showBoxHandle]);
+  // React.useEffect(() => {
+  //   showBoxHandle();
+  // }, [loading, showBoxHandle]);
 
   const fetchHandle = React.useCallback(async () => {
     setLoading(true);
@@ -135,9 +135,10 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
       if (loading) return;
       var offsetY = e.nativeEvent.contentOffset.y; // 已经滚动的距离
       var _oriageScrollHeight = e.nativeEvent.layoutMeasurement.height; // 可滚动的可见区域高度
-      if (offsetY >= _oriageScrollHeight && !fristShow) {
+      if (offsetY >= _oriageScrollHeight * 2 && !fristShow) {
         setShow(true);
         setFristShow(true);
+        setShowBox(true);
       }
       var contentSizeHeight = Math.round(e.nativeEvent.contentSize.height); // 可滚动的总高度
       if (Math.round(offsetY + _oriageScrollHeight) >= contentSizeHeight - 50) {

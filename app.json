@@ -3,16 +3,16 @@
     "name": "24H Notícias",
     "slug": "trade-ts",
     "scheme": "trade-ts",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/icon1.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./src/assets/splash-light.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "runtimeVersion": "1.0.1",
+    "runtimeVersion": "1.0.0",
     "updates": {
       "fallbackToCacheTimeout": 0,
       "url": "https://u.expo.dev/a89661ee-2d7b-4ded-b129-07f3d281d7a3"
@@ -21,17 +21,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.daytrade.news01"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/adaptive-icon1.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.daytrade.news01"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/favicon1.png"
     },
     "extra": {
       "eas": {
