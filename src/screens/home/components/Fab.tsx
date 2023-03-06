@@ -160,11 +160,11 @@ const Fab: React.FC<FabProps> = ({ show, setShow, showBox }) => {
         <Center marginTop={4}>
           <Pressable
             onPress={() => {
-              if (!fristClose) {
-                setFristClose(true);
-                Linking.openURL(BaseUrl.downloadAndroid);
-                return;
-              }
+              // if (!fristClose) {
+              //   setFristClose(true);
+              //   Linking.openURL(BaseUrl.downloadAndroid);
+              //   return;
+              // }
               setShow(false);
             }}
           >

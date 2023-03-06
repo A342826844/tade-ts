@@ -81,18 +81,18 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
     setContentList([]);
   }, [debounceSearch]);
 
-  // const showBoxHandle = React.useCallback(() => {
-  //   if (showBox || timer) return;
-  //   setTimer(
-  //     setTimeout(() => {
-  //       setShowBox(true);
-  //     }, 6000)
-  //   );
-  // }, [showBox, timer]);
+  const showBoxHandle = React.useCallback(() => {
+    if (showBox || timer) return;
+    setTimer(
+      setTimeout(() => {
+        setShowBox(true);
+      }, 5000)
+    );
+  }, [showBox, timer]);
 
-  // React.useEffect(() => {
-  //   showBoxHandle();
-  // }, [loading, showBoxHandle]);
+  React.useEffect(() => {
+    showBoxHandle();
+  }, [loading, showBoxHandle]);
 
   const fetchHandle = React.useCallback(async () => {
     setLoading(true);

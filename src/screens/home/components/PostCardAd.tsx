@@ -34,8 +34,8 @@ interface PostCard {
 
 const datas = {
   1: {
-    title: 'A negociação inteligente cria mais riqueza.',
-    body: '',
+    title: 'Investir dinheiro é mais sábio do que poupar.',
+    body: 'Ganhar muito dinheiro todos os dias é difícil, mas ganhar um pouco de dinheiro todos os dias é fácil, não é?',
     img: p1,
   },
   2: {
@@ -44,8 +44,8 @@ const datas = {
     img: p2,
   },
   3: {
-    title: 'A negociação inteligente cria mais riqueza.',
-    body: '',
+    title: 'Obter alto retorno com pouco capital.',
+    body: 'A única razão pela qual você está vendo este anúncio é porque é bom em investir.',
     img: p3,
   },
   4: {
