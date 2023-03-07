@@ -62,7 +62,7 @@ const tempIndexList: number[] = (() => {
 
 
 export default function Home({ navigation }: RootTabScreenProps<"Home">) {
-  const [page, setPage] = React.useState(1);
+  const [page, setPage] = React.useState(0);
   const [contentList, setContentList] = React.useState<any[]>([]);
   const [refreshing, setRefreshing] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
@@ -101,7 +101,7 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
       q: query,
       pageSize,
     });
-    if (page === 1) {
+    if (page === 0) {
       setContentList(res);
     } else {
       setContentList((p) => {
@@ -151,10 +151,10 @@ export default function Home({ navigation }: RootTabScreenProps<"Home">) {
 
   const onRefresh = React.useCallback(() => {
     setRefreshing(true);
-    if (page === 1) {
+    if (page === 0) {
       fetchHandle();
     } else {
-      setPage(1);
+      setPage(0);
     }
   }, [page, fetchHandle]);
 
