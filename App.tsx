@@ -4,7 +4,7 @@ import { NativeBaseProvider, extendTheme, Box } from "native-base";
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { AppEventsLogger } from "react-native-fbsdk-next";
+import { AppEventsLogger, Settings } from "react-native-fbsdk-next";
 import store, { persistor } from "./src/state";
 import useCachedResources from "./src/hooks/useCachedResources";
 import useColorScheme from "./src/hooks/useColorScheme";
@@ -20,11 +20,20 @@ export default function App() {
 
   const theme = extendTheme(themeConfig);
 
-  React.useEffect(() => {
-    AppEventsLogger.logEvent("EnterApp", {
-      date: new Date().toString(),
-    });
+  const facebookHandle = React.useCallback(async () => {
+    try {
+      Settings.initializeSDK();
+      // AppEventsLogger.logEvent("EnterApp", {
+      //   date: new Date().toString(),
+      // });
+    } catch (error) {
+      console.error(error);
+    }
   }, []);
+
+  React.useEffect(() => {
+    facebookHandle();
+  }, [facebookHandle]);
 
   if (!isLoadingComplete) return null;
 

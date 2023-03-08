@@ -132,9 +132,13 @@ const Fab: React.FC<FabProps> = ({ show, setShow, showBox }) => {
                   marginTop="32px"
                   onPress={() => {
                     Linking.openURL(BaseUrl.downloadAndroid);
-                    AppEventsLogger.logEvent("Open 24H Notícias", {
-                      date: new Date().toString(),
-                    });
+                    try {
+                      // AppEventsLogger.logEvent("Open 24H Notícias", {
+                      //   date: new Date().toString(),
+                      // });
+                    } catch (error) {
+                      console.error(error);
+                    }
                   }}
                 >
                   <Center>

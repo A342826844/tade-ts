@@ -5591,6 +5591,11 @@ expo-structured-headers@~3.0.0:
   resolved "https://registry.yarnpkg.com/expo-structured-headers/-/expo-structured-headers-3.0.1.tgz#291596c61acd2a45839ad6c6798c3d5cfc1eb4e9"
   integrity sha512-x6hkzuQL5HJoyB+xQyBf9M04ZUmrjFWqEW7gzIYWN/6LA+dgyaV4fF6U9++Re+GgGjF03vHJFqR1xYaosKKZYQ==
 
+expo-tracking-transparency@~3.0.1:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/expo-tracking-transparency/-/expo-tracking-transparency-3.0.3.tgz#ed18aa32cdabca54dacc241bafdf38b3ba079c35"
+  integrity sha512-jM/wIEKGV6DlHKNcEWN39HRPosJhRcbCrmfgWVn5A3ILYsWWvM4pToKGz34BLmg/6iTsq+ONNzuQiwBxJJzbWA==
+
 expo-updates-interface@~0.8.0:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.8.1.tgz#baeeeb01a77439682432be83ba78bc2e00547c4e"
