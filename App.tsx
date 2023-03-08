@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from "react-native";
 import { NativeBaseProvider, extendTheme, Box } from "native-base";
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
@@ -10,9 +10,7 @@ import useColorScheme from "./src/hooks/useColorScheme";
 import { useExtendBaseTheme } from "./src/hooks/useExtendBaseTheme";
 import Navigation from "./src/navigation";
 
-
 export default function App() {
-  
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
@@ -21,7 +19,7 @@ export default function App() {
   const theme = extendTheme(themeConfig);
 
   if (!isLoadingComplete) return null;
-    
+
   return (
     <SafeAreaProvider>
       <Provider store={store}>
@@ -31,13 +29,8 @@ export default function App() {
             backgroundColor="transparent"
             style="dark"
           />
-          <SafeAreaView
-            mode="padding"
-            style={{ flex: 1 }}
-          >
-            <NativeBaseProvider
-              theme={theme}
-            >
+          <SafeAreaView mode="padding" style={{ flex: 1 }}>
+            <NativeBaseProvider theme={theme}>
               <Navigation colorScheme={colorScheme} />
 
               {/* {Platform.OS !== "web" && <VConsole />} */}

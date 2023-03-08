@@ -17,9 +17,7 @@
       "fallbackToCacheTimeout": 0,
       "url": "https://u.expo.dev/a89661ee-2d7b-4ded-b129-07f3d281d7a3"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.daytrade.news01"
@@ -38,6 +36,17 @@
       "eas": {
         "projectId": "a89661ee-2d7b-4ded-b129-07f3d281d7a3"
       }
-    }
+    },
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "950610639454869",
+          "clientToken": "ac20d3906319e57eee63f4d3738d20f2",
+          "displayName": "24H Notícias",
+          "scheme": "fb950610639454869"
+        }
+      ]
+    ]
   }
 }
