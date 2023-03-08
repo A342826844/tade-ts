@@ -10,7 +10,7 @@ import {
 import { Box, Text } from "@/components/Themed";
 import { StyleSheet, Linking, Animated } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { AppEventsLogger } from "react-native-fbsdk-next";
+// import { AppEventsLogger } from "react-native-fbsdk-next";
 import React, { useRef } from "react";
 import BaseUrl from "@/constants/BaseUrl";
 
