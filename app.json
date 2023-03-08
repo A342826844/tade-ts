@@ -2,7 +2,7 @@
   "expo": {
     "name": "24H Notícias",
     "slug": "trade-ts",
-    "scheme": "trade-ts",
+    "scheme": "24hNews",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon1.png",
