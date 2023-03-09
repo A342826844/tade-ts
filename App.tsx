@@ -9,6 +9,8 @@ import useCachedResources from "./src/hooks/useCachedResources";
 import useColorScheme from "./src/hooks/useColorScheme";
 import { useExtendBaseTheme } from "./src/hooks/useExtendBaseTheme";
 import Navigation from "./src/navigation";
+import React from "react";
+import { Settings, AppEventsLogger } from "react-native-fbsdk-next";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
@@ -17,6 +19,22 @@ export default function App() {
   const themeConfig = useExtendBaseTheme();
 
   const theme = extendTheme(themeConfig);
+
+  
+  const facebookHandle = React.useCallback(async () => {
+    try {
+      Settings.initializeSDK();
+      AppEventsLogger.logEvent("EnterApp", {
+        date: new Date().toString(),
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
+  React.useEffect(() => {
+    facebookHandle();
+  }, [facebookHandle]);
 
   if (!isLoadingComplete) return null;
 

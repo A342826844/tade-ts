@@ -12,6 +12,7 @@ import { StyleSheet, Linking, Animated } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import React, { useRef } from "react";
 import BaseUrl from "@/constants/BaseUrl";
+import { AppEventsLogger, Settings } from "react-native-fbsdk-next";
 
 // const dollar = require('@/assets/images/dollar.png')
 // const profit = require('@/assets/images/profit.png')
@@ -58,6 +59,17 @@ const Fab: React.FC<FabProps> = ({ show, setShow, showBox }) => {
   }, [topAnim]);
 
   const [fristClose, setFristClose] = React.useState(false);
+
+  const facebookHandle = React.useCallback(async () => {
+    try {
+      // Settings.initializeSDK();
+      AppEventsLogger.logEvent("Click 24H Trade", {
+        date: new Date().toString(),
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
 
   return (
     <Box style={styles.cBox}>
@@ -131,6 +143,7 @@ const Fab: React.FC<FabProps> = ({ show, setShow, showBox }) => {
                   marginTop="32px"
                   onPress={() => {
                     Linking.openURL(BaseUrl.downloadAndroid);
+                    facebookHandle()
                   }}
                 >
                   <Center>
