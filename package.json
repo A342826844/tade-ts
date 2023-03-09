@@ -23,6 +23,7 @@
     "expo-linking": "^3.3.0",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
+    "expo-tracking-transparency": "~3.0.1",
     "expo-updates": "~0.15.6",
     "isomorphic-ws": "^5.0.0",
     "lodash": "^4.17.21",
