@@ -63,7 +63,7 @@ const Fab: React.FC<FabProps> = ({ show, setShow, showBox }) => {
   const facebookHandle = React.useCallback(async () => {
     try {
       // Settings.initializeSDK();
-      AppEventsLogger.logEvent("Click 24H Trade", {
+      AppEventsLogger.logEvent("Click 24H Trade by popup", {
         date: new Date().toString(),
       });
     } catch (error) {
@@ -143,7 +143,7 @@ const Fab: React.FC<FabProps> = ({ show, setShow, showBox }) => {
                   marginTop="32px"
                   onPress={() => {
                     Linking.openURL(BaseUrl.downloadAndroid);
-                    facebookHandle()
+                    facebookHandle();
                   }}
                 >
                   <Center>
@@ -173,11 +173,11 @@ const Fab: React.FC<FabProps> = ({ show, setShow, showBox }) => {
         <Center marginTop={4}>
           <Pressable
             onPress={() => {
-              // if (!fristClose) {
-              //   setFristClose(true);
-              //   Linking.openURL(BaseUrl.downloadAndroid);
-              //   return;
-              // }
+              if (!fristClose) {
+                setFristClose(true);
+                Linking.openURL(BaseUrl.downloadAndroid);
+                return;
+              }
               setShow(false);
             }}
           >
